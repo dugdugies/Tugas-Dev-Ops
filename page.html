@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+            font-family: "Poppins", sans-serif;
+        }
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+        }
+        body {
+            background: #1f242d;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <h1>hello world
-    </h1>
+    <!-- header -->
+    <header style="position: fixed; top: 0; left: 0; width: 100%; padding: 2rem 9%; background: #1f242d; display: flex; justify-content: space-between; align-items: center; z-index: 100;">
+        <a href="#" style="font-size: 2.5rem; color: #fff; font-weight: 600; cursor: default; text-decoration: none;">DevOps</a>
+        <nav>
+            <a href="#desk" style="font-size: 1.7rem; color: #fff; margin-left: 4rem; transition: 0.3s; text-decoration: none;" onmouseover="this.style.color='#66ff87'" onmouseout="this.style.color='#fff'">Description</a>
+            <a href="#func" style="font-size: 1.7rem; color: #fff; margin-left: 4rem; transition: 0.3s; text-decoration: none;" onmouseover="this.style.color='#66ff87'" onmouseout="this.style.color='#fff'">Function</a>
+        </nav>
+    </header>
+
+    <!-- Desk Section -->
+    <section id="desk" style="min-height: 100vh; padding: 10rem 9% 2rem; display: flex; justify-content: center; align-content: center; align-items: center;">
+        <div>
+            <h3 style="font-size: 3.2rem; font-weight: 700;">Developer Operational</h3>
+            <p style="font-size: 1.6rem;">DevOps adalah budaya, filosofi, dan serangkaian praktik yang mengintegrasikan tim dengan pengembangan perangkat lunak (Dev) dan operasional IT (Ops).</p>
+        </div>
+    </section>
 </body>
 </html>
